@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baigiamasis Darbas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="app/images/gulp.svg">
   <link rel="stylesheet" href="app/css/style.css">
 </head>
@@ -12,16 +13,49 @@
   <nav class="navbar">
     <div class="navcontainer">
       <img src="app/images/icon-2.png" alt="icon">
-      <div class="links">
-        <a href="#" class="link">Features</a>
+      <div id="links" class="links">
+        <a href="#" class="link active">Features</a>
         <a href="#" class="link">About</a>
         <a href="#" class="link">Pricing</a>
         <a href="#" class="link">Reviews</a>
         <a href="#" class="link">Contact</a>
       </div>
-
+      <i id="burger" class="fa-solid fa-bars"></i>
     </div>
   </nav>
+  <header class="section-1">
+    <div class="headerlayer">
+      <div class="headcontainer">
+        <div class="leftside">
+          <img src="app/images/icon.png" alt="icon">
+          <h1>Explained propriety of out perpetual to you</h1>
+          <span></span>
+          <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+          <button class="download">DOWNLOAD</button>
+        </div>
+        <div class="rightside">
+          <h2>Try Your <span>FREE</span> Trial Today</h2>
+          <h3>Your details</h3>
+          <form action="">
+            <input type="text" placeholder="First name" name="firstName" required>
+            <input type="text" placeholder="Last name" name="lastName" required>
+            <input type="text" placeholder="Phone number" name="phone" required>
+            <div class="subscibe">
+              <h3>Type of subscription</h3>
+              <input id="monthly" type="radio" name="subscription" value="monthly" checked>
+              <label for="monthly">Monthly</label>
+  
+              <input id="yearly" type="radio" name="subscription" value="yearly" checked>
+              <label for="yearly">Yearly</label>
+            </div>
+            <input type="submit" value="GET STARTED">
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+  <script src="nav.js"></script>
 
 </body>
 </html>

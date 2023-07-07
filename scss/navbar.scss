@@ -16,7 +16,49 @@ nav{
         height: 53px;
       }
 
+      .links {
+        display: flex;
+        gap: 30px;
+
+        .active {
+          border-bottom: 3px solid green;
+          border-radius: 2px;
+        }
+
+        a{
+          height: 55px;
+          // border-bottom: 3px solid green;
+          text-decoration: none;
+          text-align: center;
+          line-height: 40px;
+          font-size: 1.1em;
+          color: #b2b2b2;
+          letter-spacing: 1px;
+          transition: 0.3s;
+
+          &:hover {
+            color: white;
+            text-shadow: 0 4px 5px white;
+            transform: scale(1.1);
+          }
+        }
+      }
       
-  
+      #burger {
+        font-size: 1.3em;
+        color: white;
+        display: none;
+        cursor: pointer;
+        transition: 0.5s;
+
+      }
+      .burgerchange {
+        transform: rotate(-90deg) scale(1.2);
+        color: gold !important;
+        text-shadow: 0 0 5px white;
+      }
+      
     }
   }
+
+  
