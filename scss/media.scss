@@ -166,3 +166,35 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    section.main {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items:  center !important;
+        gap: 10px;
+        padding-top: 10px;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 500px) {
+    section.main {
+        .main-img {
+            img{
+                width: 300px !important;
+                height: 150px !important;
+            }
+        }
+        .main-info {
+            h2 {
+                width: auto !important;
+                font-size: 1.5em !important;
+            }
+            .title {
+                flex-direction: column;
+                width: auto ;
+            }
+        }
+    }
+}
