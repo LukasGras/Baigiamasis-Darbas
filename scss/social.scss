@@ -18,7 +18,12 @@ section.social {
         i {
             font-size: 2em;
             color:#eba69a;
-
+            transition: 1s;
+            &:hover {
+                cursor: pointer;
+                transform: rotate(360deg) scale(1.5);
+                color: gold;
+            }
         }
     }
 

@@ -82,11 +82,11 @@
   <section class="tabs">
     <div class="tab-layer">
       <div class="tab-buttons">
-          <button onclick="changeTab(event, 'first-tab')" class="selected"><span>Register</span></button>
-          <button onclick="changeTab(event, 'second-tab')"><span>Apply</span></button>
-          <button onclick="changeTab(event, 'third-tab')"><span>Receive</span></button>
+          <button  id="tab-button" onclick="changeTab(event, 'first-tab')" class="tab-selected tabButton"><span>Register</span></button>
+          <button class="tabButton" id="tab-button" onclick="changeTab(event, 'second-tab')"><span>Apply</span></button>
+          <button class="tabButton" id="tab-button" onclick="changeTab(event, 'third-tab')"><span>Receive</span></button>
       </div>
-      <div id="first-tab" class="tab">
+      <div id="first-tab" class="tab animate block">
         <div class="tab-text">
           <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint architecto officia temporibus voluptate, vitae ab ad accusamus optio molestias ducimus inventore consectetur praesentium nemo cum deserunt iste! Debitis quasi amet ipsa repellendus beatae, iste vero sit!</p>
@@ -114,12 +114,66 @@
           
         </div>
       </div>
-      <div id="second-tab" class="tab"></div>
-      <div id="third-tab" class="tab"></div>
-
+      <div id="second-tab" class="tab">
+        <div class="tab-text">
+          <h1>Mityba – organizmo veiklos sritis, apimanti apsirūpinimą maisto medžiagomis, pradedant maisto paieška ir/ar medžiokle, jo kramtymą ir rijimą.</h1>
+          <p>Žmogaus organizmui reikiamas subalansuotas maistas, paprastai pakankamai įvairus. Pagrindinės maisto medžiagos yra baltymai, angliavandeniai bei riebalai, kurie, norint užtikrinti gerą sveikatą, turi būti vartojami tam tikromis proporcijomis. Šios proporcijos</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vel fugiat. Inventore.</p>
+        </div>
+        <div class="tab-photos">
+          <div class="firstphoto">
+            <img id="upperphotos" src="app/images/tab-first.png" alt="vegitable">
+            <div class="overlay-upper">
+              <div class="overlay-text">EXPLORE</div>
+            </div>
+          </div>
+          <div class="secondphoto">
+            <img id="upperphotos" src="app/images/tab-second.png" alt="leaf">
+            <div class="overlay-upper">
+              <div class="overlay-text">EXPLORE</div>
+            </div>
+          </div>
+          <div class="thirdphoto">
+            <img id="downphoto" src="app/images/tab-third.png" alt="stairs">
+            <div class="overlay-upper">
+              <div class="overlay-text">EXPLORE</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div id="third-tab" class="tab">
+        <div class="tab-text">
+          <h1>Žmogaus sveikata yra glaudžiai susijusi su jo mityba. Netinkama mityba gali sukelti ar įtakoti trumpalaikius sutrikimus,</h1>
+          <p>Tam tikrų maistinių medžiagų trūkumas organizme gali sukelti įvairias ligas (pvz., vitamino C trūkumas – skorbutą, geležies trūkumas – mažakraujystę). Kai kurių vitaminų perdozavimas, galimas vartojant vitaminus papildomai, gali sukelti laikinus virškinimo sutrikimus. Vitamino A ypač daug turinčios baltųjų ,</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vel fugiat. Inventore.</p>
+        </div>
+        <div class="tab-photos">
+          <div class="firstphoto">
+            <img id="upperphotos" src="app/images/tab-first.png" alt="vegitable">
+            <div class="overlay-upper">
+              <div class="overlay-text">EXPLORE</div>
+            </div>
+          </div>
+          <div class="secondphoto">
+            <img id="upperphotos" src="app/images/tab-second.png" alt="leaf">
+            <div class="overlay-upper">
+              <div class="overlay-text">EXPLORE</div>
+            </div>
+          </div>
+          <div class="thirdphoto">
+            <img id="downphoto" src="app/images/tab-third.png" alt="stairs">
+            <div class="overlay-upper">
+              <div class="overlay-text">EXPLORE</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
   </section>
   <script src="nav.js"></script>
+  <script src="tab.js"></script>
 
 </body>
 </html>

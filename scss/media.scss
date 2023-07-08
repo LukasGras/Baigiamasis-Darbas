@@ -99,13 +99,70 @@
     section.social {
         flex-direction: column;
         margin-top: 20px;
-        height: 100px !important;
+        height: 150px !important;
         .social-text {
             width: auto !important;
             text-align: center;
         }
         .social-media {
             margin-top: 20px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+
+@media (max-width: 1050px) {
+   section.tabs {
+    height: 1000px !important;
+    margin: auto !important;
+    .tab-layer {
+        height: 1000px !important;
+        flex-direction: column;
+        .tab-buttons {
+            flex-direction: row !important;
+        }
+        .block {
+            flex-direction: column;
+        }
+    }
+   } 
+}
+
+@media (max-width: 670px) {
+    section.tabs {
+        height: 1050px !important;
+        background-size: cover !important;
+        .tab-layer {
+            height: 1050px !important;
+            margin: auto !important;
+            .tab-buttons{
+                margin: auto;
+                button {
+                    width: 75px !important;
+                    height: 75px !important;
+                    font-size: 0.8em !important;
+                
+                }
+            }
+            .block {
+                width: 300px !important;
+                .tab-text {
+                    width: 300px !important;
+                    margin: 0 !important;
+                    h1 {
+                        font-size: 1.3em !important;
+                    }
+                }
+                .tab-photos {
+                    flex-direction: column;
+                    align-items: center;
+                    width: 300px !important;
+                    #downphoto {
+                        width: 300px !important;
+                    }
+                }
+            }
         }
     }
 }

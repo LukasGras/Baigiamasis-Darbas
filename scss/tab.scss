@@ -1,5 +1,5 @@
 section.tabs {
-    background: url(../app/images/tab-background.png);
+    background: url(/app/images/tab-background.png);
     background-position: bottom;
     background-size: cover;
     height: 600px;
@@ -15,6 +15,10 @@ section.tabs {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            .tab-selected {
+                transform: scale(1.1);
+                opacity: 1;
+            }
             button {
                 width: 100px;
                 height: 100px;
@@ -23,6 +27,7 @@ section.tabs {
                 text-transform: uppercase;
                 font-size: 1em;
                 opacity: 0.5;
+                transition: 0.5s;
                 span {
                     display: inline-block;
                     transform: rotate(-45deg);
@@ -35,10 +40,18 @@ section.tabs {
             }
         }
         .tab {
+            display: none;
+            opacity: 0;
+            transition: 2s;
+        }
+        .tab.animate {
+            opacity: 1;
+        }
+        .block {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 100px;
+        gap: 20px;
             .tab-text {
                 display: flex;
                 flex-direction: column;
