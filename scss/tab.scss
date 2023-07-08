@@ -1,0 +1,161 @@
+section.tabs {
+    background: url(/app/images/tab-background.png);
+    background-position: bottom;
+    background-size: cover;
+    height: 600px;
+    max-width: 1400px;
+    margin: auto;
+    .tab-layer {
+        background-color: rgba(138, 99, 41, 0.582);
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .tab-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            button {
+                width: 100px;
+                height: 100px;
+                background: #E27866;
+                color: white;
+                text-transform: uppercase;
+                font-size: 1em;
+                opacity: 0.5;
+                span {
+                    display: inline-block;
+                    transform: rotate(-45deg);
+                }
+                &:hover {
+                    cursor: pointer;
+                    font-size: 1.1em;
+                    opacity: 1;
+                }
+            }
+        }
+        .tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+            .tab-text {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                width: 500px;
+                margin-left: 50px;
+                h1 {
+                    font-size: 1.8em;
+                    color: white;
+                }
+                p {
+                    color: white;
+                }
+            }
+            .tab-photos {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 360px;
+                .firstphoto {
+                    position: relative;
+                    width: 50%;
+                    .overlay-upper {
+                        position: absolute;
+                        top: 6px;
+                        bottom: 0;
+                        left: 9px;
+                        right: 0;
+                        height: 90%;
+                        width: 90%;
+                        opacity: 0;
+                        transition: 0.5s ease;
+                        background-color: #E27866;
+                    }
+                    .overlay-text {
+                        cursor: pointer;
+                        color: white;
+                        font-size: 1.2em;
+                        position: absolute;
+                        top: 45%;
+                        left: 28%;
+                    }
+                    &:hover .overlay-upper {
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+                }
+                .secondphoto {
+                    position: relative;
+                    width: 50%;
+                    .overlay-upper {
+                        position: absolute;
+                        top: 6px;
+                        bottom: 0;
+                        left: 9px;
+                        right: 0;
+                        height: 90%;
+                        width: 90%;
+                        opacity: 0;
+                        transition: 0.5s ease;
+                        background-color: #E27866;
+                    }
+                    .overlay-text {
+                        cursor: pointer;
+                        color: white;
+                        font-size: 1.2em;
+                        position: absolute;
+                        top: 45%;
+                        left: 28%;
+                    }
+                    &:hover .overlay-upper {
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+                }
+                .thirdphoto {
+                    position: relative;
+                    .overlay-upper {
+                        position: absolute;
+                        top: 6px;
+                        bottom: 0;
+                        left: 9px;
+                        right: 0;
+                        height: 91%;
+                        width: 95%;
+                        opacity: 0;
+                        transition: 0.5s ease;
+                        background-color: #E27866;
+                    }
+                    .overlay-text {
+                        cursor: pointer;
+                        color: white;
+                        font-size: 1.2em;
+                        position: absolute;
+                        top: 40%;
+                        left: 38%;
+                    }
+                    &:hover .overlay-upper {
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+                }
+                
+                #upperphotos {
+                    display: block;
+                    width: 180px;
+                    transition: 0.5s;
+                }
+                #downphoto {
+                    display: block;
+                    width: 360px;
+                    height: 178px;
+                    transition: 0.5s;
+                }
+            }
+
+        }
+    }
+
+}

@@ -49,10 +49,11 @@
 @media (max-width: 670px) {
     header.section-1 {
         display: flex;
-        // text-align: center;
+        height: 1200px !important;
         .headerlayer {
             display: flex !important;
             width: 100%;
+            height: 1200px !important;
             .headcontainer{
                 width: 100% !important;
                 .leftside {
@@ -78,7 +79,7 @@
                     }
                 }
                 .rightside {
-                    width: 400px !important;
+                    width: 300px !important;
                 }
             }
         }
@@ -98,6 +99,7 @@
     section.social {
         flex-direction: column;
         margin-top: 20px;
+        height: 100px !important;
         .social-text {
             width: auto !important;
             text-align: center;

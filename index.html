@@ -78,6 +78,47 @@
       <i id="special" class="fa-solid fa-wifi fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
     </div>
   </section>
+
+  <section class="tabs">
+    <div class="tab-layer">
+      <div class="tab-buttons">
+          <button onclick="changeTab(event, 'first-tab')" class="selected"><span>Register</span></button>
+          <button onclick="changeTab(event, 'second-tab')"><span>Apply</span></button>
+          <button onclick="changeTab(event, 'third-tab')"><span>Receive</span></button>
+      </div>
+      <div id="first-tab" class="tab">
+        <div class="tab-text">
+          <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint architecto officia temporibus voluptate, vitae ab ad accusamus optio molestias ducimus inventore consectetur praesentium nemo cum deserunt iste! Debitis quasi amet ipsa repellendus beatae, iste vero sit!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vel fugiat. Inventore.</p>
+        </div>
+        <div class="tab-photos">
+          <div class="firstphoto">
+            <img id="upperphotos" src="app/images/tab-first.png" alt="vegitable">
+            <div class="overlay-upper">
+              <div class="overlay-text">EXPLORE</div>
+            </div>
+          </div>
+          <div class="secondphoto">
+            <img id="upperphotos" src="app/images/tab-second.png" alt="leaf">
+            <div class="overlay-upper">
+              <div class="overlay-text">EXPLORE</div>
+            </div>
+          </div>
+          <div class="thirdphoto">
+            <img id="downphoto" src="app/images/tab-third.png" alt="stairs">
+            <div class="overlay-upper">
+              <div class="overlay-text">EXPLORE</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div id="second-tab" class="tab"></div>
+      <div id="third-tab" class="tab"></div>
+
+    </div>
+  </section>
   <script src="nav.js"></script>
 
 </body>
