@@ -1,6 +1,7 @@
 @media (max-width: 800px){
     #burger {
         display: block !important;
+        margin-right: 60px;
     }
 
     .links {
@@ -23,5 +24,86 @@
         transition: 0.5s;
         z-index: auto;
         opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    header.section-1 {
+        height: 1100px !important;
+        .headerlayer {
+            height: 1100px !important;
+            .headcontainer {
+                flex-direction: column;
+                .rightside {
+                    h2 {
+                        font-size: 1.1em !important;
+                    }
+                }
+            }
+        }
+    
+        
+    }    
+}
+
+@media (max-width: 670px) {
+    header.section-1 {
+        display: flex;
+        // text-align: center;
+        .headerlayer {
+            display: flex !important;
+            width: 100%;
+            .headcontainer{
+                width: 100% !important;
+                .leftside {
+                    text-align: center;
+                    width: 100% !important;
+                    img {
+                        margin: auto;
+                    }
+                    span {
+                        margin: auto;
+                    }
+                    h1 {
+                        width: 100% !important;
+                        height: auto !important;
+                    }
+                    p {
+                        width: 100% !important;
+                        height: auto !important;
+                        // padding: 10px;
+                    }
+                    button {
+                        margin: auto;
+                    }
+                }
+                .rightside {
+                    width: 400px !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    section.social {
+        .social-media {
+            gap: 30px !important;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    section.social {
+        flex-direction: column;
+        margin-top: 20px;
+        .social-text {
+            width: auto !important;
+            text-align: center;
+        }
+        .social-media {
+            margin-top: 20px;
+        }
     }
 }
