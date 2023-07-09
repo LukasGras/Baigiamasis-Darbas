@@ -1,0 +1,127 @@
+section.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 900px;
+    max-width: 1400px;
+    margin: auto;
+    background: #6696E2;
+    padding-top: 100px;
+    h1 {
+        color: white;
+        font-size: 2em;
+    }
+    span {
+        width: 64px;
+        border-bottom: 2px solid #41D395;
+    }
+    p {
+        color: white;
+        text-align: center;
+    }
+    .pricing-tabs {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+        text-align: center;
+        .price-tab {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            transition: 0.3s;
+            .upper {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 210px;
+                background:#333333;
+                border-bottom: 5px solid #41D395 ;
+                border-radius: 5px 5px 0 0;
+                transition: 0.5s;
+                position: relative;
+                h3 {
+                    color: white;
+                    padding-top: 10px;
+                }
+                h2 {
+                    // text-align: center;
+                    color: white;
+                    font-size: 5em;
+                    font-family: arial;
+                    &::before {
+                        content: '$';
+                        font-size: 0.5em;
+                    }
+                }
+                p {
+                    opacity: 0.5;
+                    padding-bottom: 10px;
+                }
+                .texttwo {
+                    position: absolute;
+                    top: 180px;
+                    left: 100px;
+                    color: white;
+                    text-transform: uppercase;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                .textone {
+                    position: absolute;
+                    top: 180px;
+                    left: 140px;
+                    color: white;
+                    text-transform: uppercase;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+                .textthree {
+                    position: absolute;
+                    top: 180px;
+                    left: 110px;
+                    color: white;
+                    text-transform: uppercase;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+            }
+            .lower {
+                height: 360px;
+                background: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-top: 10px;
+                // line-height: 40px;
+                p {
+                    color: #33333354;
+                    height: 60px;
+                    
+                    text-transform: uppercase;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: scaleY(1.1);
+                .upper {
+                    border-bottom: 40px solid #41D395;
+                    .textone {
+                        transition-delay: 0.3s;
+                        opacity: 1;
+                    }
+                    .texttwo {
+                        transition-delay: 0.3s;
+                        opacity: 1;
+                    }
+                    .textthree {
+                        transition-delay: 0.3s;
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+    }
+}

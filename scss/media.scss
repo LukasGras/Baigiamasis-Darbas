@@ -194,7 +194,20 @@
             .title {
                 flex-direction: column;
                 width: auto ;
+                padding-bottom: 20px;
             }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    section.awesome {
+        height: auto !important;
+        text-align: center;
+        padding-top: 50px !important;
+        .fonts {
+            flex-direction: column;
+            padding-bottom: 20px ;
         }
     }
 }
