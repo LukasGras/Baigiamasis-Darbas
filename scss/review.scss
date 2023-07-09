@@ -1,0 +1,68 @@
+section.review {
+    height: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 80px;
+    h1 {
+        font-size: 2.3em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    span.line {
+        width: 64px;
+        border-bottom: 2px solid #6696E2 ;
+    }
+    .review-swiper {
+
+        width: 80%;
+        .swiper {
+            width: auto;
+            .swiper-pagination {
+                span {
+                    background-color: #E27866;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+            .swiper-wrapper {
+                display: flex;
+                align-items: end;
+                // flex-wrap: wrap;
+                // gap: 20px;
+                // margin: auto;
+                .swiper-slide {
+                    .comment {
+                        width: 275px;
+                        height: auto;
+                        text-align: left;
+                        padding: 20px;
+                        background:#6696E2;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                        p {
+                            color: white;
+                            letter-spacing: 1px;
+                        }
+                    }
+                    .slide-profile {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        margin-bottom: 100px;
+                    }
+                    
+                    .slide-profile {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+
+}
