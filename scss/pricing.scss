@@ -28,7 +28,7 @@ section.pricing {
         .price-tab {
             display: flex;
             flex-direction: column;
-            width: 350px;
+            width: 300px;
             transition: 0.3s;
             .upper {
                 display: flex;
@@ -61,7 +61,7 @@ section.pricing {
                 .texttwo {
                     position: absolute;
                     top: 180px;
-                    left: 100px;
+                    left: 80px;
                     color: white;
                     text-transform: uppercase;
                     opacity: 0;
@@ -70,7 +70,7 @@ section.pricing {
                 .textone {
                     position: absolute;
                     top: 180px;
-                    left: 140px;
+                    left: 110px;
                     color: white;
                     text-transform: uppercase;
                     opacity: 0;
@@ -79,7 +79,7 @@ section.pricing {
                 .textthree {
                     position: absolute;
                     top: 180px;
-                    left: 110px;
+                    left: 90px;
                     color: white;
                     text-transform: uppercase;
                     opacity: 0;
