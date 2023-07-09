@@ -55,11 +55,15 @@ section.review {
                         align-items: center;
                         gap: 20px;
                         margin-bottom: 100px;
+
+                        .profile-text {
+                            p {
+                                letter-spacing: 1px;
+                                opacity: 0.2;
+                            }
+                        }
                     }
                     
-                    .slide-profile {
-                        display: flex;
-                    }
                 }
             }
         }
