@@ -40,7 +40,7 @@
             }
         }
     }
-    header.section-1 {
+    section.section-1 {
         height: 1100px !important;
         .headerlayer {
             height: 1100px !important;
@@ -146,7 +146,7 @@
 }
 
 @media (max-width: 670px) {
-    header.section-1 {
+    section.section-1 {
         display: flex;
         height: 1200px !important;
         .headerlayer {
@@ -263,7 +263,7 @@
             padding-bottom: 20px;
         }
     }
-    header.section-1 {
+    section.section-1 {
         height: auto !important;
         .headerlayer {
             height: auto !important;
