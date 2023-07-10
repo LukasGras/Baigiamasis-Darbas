@@ -10,7 +10,7 @@ section.awesome {
     background: white;
     span{
        width: 64px;
-       border-bottom: 2px solid #E27866;
+       border-bottom: 2px solid $green;
     }
     .fonts {
         display: flex;
@@ -23,9 +23,9 @@ section.awesome {
             width: auto;
             i {
                 font-size: 1.3em;
-                color: #E27866;
+                color: $green;
                 padding: 15px;
-                border: 1px solid #E27866;
+                border: 1px solid $green;
                 border-radius: 60px;
             }
         }

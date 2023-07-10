@@ -13,7 +13,7 @@ burger.addEventListener("click", function(){
 for(let anchor of anchors){
     anchor.addEventListener("click", function(){
         links.classList.remove("translate")
-        burger.classList.remove("rotate")
+        burger.classList.remove("burgerchange")
     })
 }
 
@@ -40,3 +40,25 @@ window.addEventListener("scroll", function(){
     }
     console.log("section")
 })
+
+
+let button = document.getElementById("upperButton")
+let input1 = document.getElementById("inputUpper1")
+let input2 = document.getElementById("inputUpper2")
+let input3 = document.getElementById("inputUpper3")
+button.addEventListener("click", function() {
+    if(input1 && input1.value) {
+        if(input2 && input2.value) {
+            if(input3 && input3.value){
+                alert ("Your Subscribtion Details Will Be Send To You're Phone ")
+            }else {
+                alert ("Phone Number Was Not Filled")
+            }
+        }else {
+            alert("Last Name Was Not Filled")
+        }
+
+    }else {
+        alert("First Name Was Not Filled")
+    }
+});

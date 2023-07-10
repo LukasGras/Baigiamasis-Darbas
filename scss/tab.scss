@@ -3,7 +3,7 @@ section.tabs {
     background-position: bottom;
     background-size: cover;
     height: 600px;
-    max-width: 1400px;
+    max-width: $width;
     margin: auto;
     .tab-layer {
         background-color: rgba(138, 99, 41, 0.582);
@@ -22,7 +22,7 @@ section.tabs {
             button {
                 width: 100px;
                 height: 100px;
-                background: #E27866;
+                background: $green;
                 color: white;
                 text-transform: uppercase;
                 font-size: 1em;
@@ -84,7 +84,7 @@ section.tabs {
                         width: 90%;
                         opacity: 0;
                         transition: 0.5s ease;
-                        background-color: #E27866;
+                        background-color: $green;
                     }
                     .overlay-text {
                         cursor: pointer;
@@ -112,7 +112,7 @@ section.tabs {
                         width: 90%;
                         opacity: 0;
                         transition: 0.5s ease;
-                        background-color: #E27866;
+                        background-color: $green;
                     }
                     .overlay-text {
                         cursor: pointer;
@@ -139,7 +139,7 @@ section.tabs {
                         width: 95%;
                         opacity: 0;
                         transition: 0.5s ease;
-                        background-color: #E27866;
+                        background-color: $green;
                     }
                     .overlay-text {
                         cursor: pointer;

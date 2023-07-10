@@ -6,7 +6,7 @@ section.review {
     // justify-content: center;
     align-items: center;
     gap: 50px;
-    max-width: 1400px;
+    max-width: $width;
     margin: auto;
     padding-top: 80px;
     h1 {
@@ -25,7 +25,7 @@ section.review {
             width: auto;
             .swiper-pagination {
                 span {
-                    background-color: #E27866;
+                    background-color: $green;
                     width: 10px;
                     height: 10px;
                 }
